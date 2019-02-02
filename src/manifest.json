@@ -1,0 +1,29 @@
+{
+    "name": "QLinks",
+    "version": "1.1.0",
+    "description": "An extension for queueing links",
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
