@@ -7,6 +7,7 @@ fetch("https://www.youtube.com/watch?v=gpzjvW6nJu8")
 
 */
 
+// add to separate file contextmenu.js
 var contextMenuItem = {
     "id": "queueLink",
     "title": "Queue link",
@@ -50,6 +51,7 @@ chrome.contextMenus.onClicked.addListener((clickData) => {
     }
 })
 
+// remove?
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 
     if (changeInfo.status === "complete") {
