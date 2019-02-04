@@ -9,7 +9,8 @@
     ],
     "background": {
         "scripts": [
-            "background.js"
+            "background.js",
+            "contextMenu.js"
         ]
     },
     "content_scripts": [

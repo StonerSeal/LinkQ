@@ -8,13 +8,13 @@ fetch("https://www.youtube.com/watch?v=gpzjvW6nJu8")
 */
 
 // add to separate file contextmenu.js
-var contextMenuItem = {
+/*var contextMenuItem = {
     "id": "queueLink",
     "title": "Queue link",
     "contexts": ["link"]
 }
 
-chrome.contextMenus.create(contextMenuItem);
+chrome.contextMenus.create(contextMenuItem);*/
 
 
 chrome.contextMenus.onClicked.addListener((clickData) => {
